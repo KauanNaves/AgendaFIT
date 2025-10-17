@@ -1,0 +1,119 @@
+/* ======================================================= */
+/* TEMA 'FRESH MINT' - VERSÃO COMPACTA                     */
+/* ======================================================= */
+
+/* Estilos Gerais */
+QWidget {
+    background-color: #F5F7FA;
+    color: #34495E;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+}
+
+/* Campos de Entrada (Menores) */
+QLineEdit, QComboBox, QDateEdit, QTimeEdit {
+    background-color: #FFFFFF;
+    color: #34495E;
+    border: 1px solid #D6DBDF;
+    border-radius: 6px; /* Um pouco menos redondo */
+    padding: 5px 8px; /* Padding reduzido */
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus, QTimeEdit:focus {
+    border: 2px solid #1ABC9C;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+/* Estilos de Botões (Menores) */
+
+/* Botão Padrão/Secundário */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #34495E;
+    border: 1px solid #D6DBDF;
+    padding: 6px 15px; /* Padding reduzido */
+    border-radius: 8px; /* Um pouco menos redondo */
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #F0F2F4;
+    border-color: #BDC3C7;
+}
+
+/* Botão Primário */
+QPushButton#botao_lancar_atendimento,
+QPushButton#gerar_resumo_paciente,
+QPushButton#gerar_mensagem_e_resumo_profissional {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+}
+
+QPushButton#botao_lancar_atendimento:hover,
+QPushButton#gerar_resumo_paciente:hover,
+QPushButton#gerar_mensagem_e_resumo_profissional:hover {
+    background-color: #16A085;
+}
+
+/* Tabelas */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEE;
+    border-radius: 8px;
+    gridline-color: #F5F7FA;
+}
+
+QHeaderView::section {
+    background-color: #F5F7FA;
+    padding: 6px; /* Padding reduzido */
+    border: none;
+    border-bottom: 2px solid #EAECEE;
+    font-weight: bold;
+    color: #7F8C8D;
+}
+
+/* Abas (Menores) */
+QTabBar::tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 6px 12px; /* Padding reduzido */
+    font-weight: bold;
+    color: #7F8C8D;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    color: #1ABC9C;
+    border-bottom: 3px solid #1ABC9C;
+}
+
+/* Calendário */
+QCalendarWidget QAbstractItemView:selected {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar { 
+    background-color: #FFFFFF;
+    border: 1px solid #EAECEE;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+}
+
+QCalendarWidget QToolButton {
+    color: #34495E;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #F0F2F4;
+    border-radius: 5px;
+}

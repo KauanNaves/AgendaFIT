@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/agenda.svg</file>
+    <file>icons/buton_lancar.svg</file>
+    <file>icons/copiar.svg</file>
+    <file>icons/excluir.svg</file>
+    <file>icons/home.svg</file>
+    <file>icons/informacoes.svg</file>
+    <file>icons/lancar.svg</file>
+    <file>icons/paciente.svg</file>
+    <file>icons/search.svg</file>
+    <file>icons/agenda.svg</file>
+    <file>icons/buton_lancar.svg</file>
+    <file>icons/copiar.svg</file>
+    <file>icons/excluir.svg</file>
+    <file>icons/home.svg</file>
+    <file>icons/informacoes.svg</file>
+    <file>icons/lancar.svg</file>
+    <file>icons/paciente.svg</file>
+    <file>icons/search.svg</file>
+
+  </qresource>
+</RCC>

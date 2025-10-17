@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>725</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>725</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>735</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>735</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_da_esquerda">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>550</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>625</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QToolBox" name="paginas_menu_principal">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <italic>false</italic>
+              <bold>true</bold>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LayoutDirection::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pagina1_menu">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>132</width>
+               <height>539</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>MENU</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QPushButton" name="botao_home">
+                <property name="mouseTracking">
+                 <bool>false</bool>
+                </property>
+                <property name="contextMenuPolicy">
+                 <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/icons/home.svg</normaloff>:/icons/home.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botao_lancar">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/icons/buton_lancar.svg</normaloff>:/icons/buton_lancar.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botao_agendas">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/icons/agenda.svg</normaloff>:/icons/agenda.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botao_pacientes">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/icons/paciente.svg</normaloff>:/icons/paciente.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botao_pesquisar_pacientes_menu">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/icons/search.svg</normaloff>:/icons/search.svg</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>300</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_informacoes_menu">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>126</width>
+               <height>110</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>INFORMAÇÕES</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QFrame" name="frame_informacoes_menu">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <widget class="QPushButton" name="botao_mais_informacoes">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>:/icons/informacoes.svg</normaloff>:/icons/informacoes.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="texto_versao_">
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;AGENDA FIT&lt;br/&gt;v2.0.0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_da_direira">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QTabWidget" name="paginas_principais">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="usesScrollButtons">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="pagina_home">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="title">
+              <string>Home</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_logo_do_programa">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#0b43c5;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#000000;&quot;&gt;AGENDA FIT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_lancar">
+             <attribute name="title">
+              <string>Lançar</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QFrame" name="frame_calendario">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QCalendarWidget" name="calendario"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_lancamento">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QLineEdit" name="input_nome_paciente">
+                   <property name="placeholderText">
+                    <string>NOME DO PACIENTE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="input_profissional">
+                   <item>
+                    <property name="text">
+                     <string>FERNANDA</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>JUNIA</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="input_data">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="dateTime">
+                    <datetime>
+                     <hour>15</hour>
+                     <minute>0</minute>
+                     <second>0</second>
+                     <year>2025</year>
+                     <month>1</month>
+                     <day>1</day>
+                    </datetime>
+                   </property>
+                   <property name="minimumDateTime">
+                    <datetime>
+                     <hour>15</hour>
+                     <minute>0</minute>
+                     <second>0</second>
+                     <year>2025</year>
+                     <month>1</month>
+                     <day>1</day>
+                    </datetime>
+                   </property>
+                   <property name="maximumDate">
+                    <date>
+                     <year>2030</year>
+                     <month>12</month>
+                     <day>31</day>
+                    </date>
+                   </property>
+                   <property name="calendarPopup">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTimeEdit" name="input_hora">
+                   <property name="maximumTime">
+                    <time>
+                     <hour>23</hour>
+                     <minute>59</minute>
+                     <second>59</second>
+                    </time>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="input_descricao">
+                   <item>
+                    <property name="text">
+                     <string>CISLAV</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>AVALIAÇÃO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PARTICULAR</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PILATES</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_resumo_atendimento_lancar">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QPushButton" name="botao_lancar_atendimento">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>45</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>:/icons/buton_lancar.svg</normaloff>:/icons/buton_lancar.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>35</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="class" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="texto_resumo_atendimento">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>500</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_agendas">
+             <attribute name="title">
+              <string>Agendas</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QTabWidget" name="paginas_agendas">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="agenda_junia">
+                 <attribute name="title">
+                  <string>AGENDAS</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item>
+                   <widget class="QComboBox" name="combox_profissional_agenda">
+                    <item>
+                     <property name="text">
+                      <string>FERNANDA</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>JUNIA</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_calendario_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>210</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Shape::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Shadow::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <item>
+                      <widget class="QCalendarWidget" name="calendario_agenda"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_agenda_junia">
+                    <property name="frameShape">
+                     <enum>QFrame::Shape::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Shadow::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <widget class="QTableWidget" name="tabela_horarios">
+                       <property name="maximumSize">
+                        <size>
+                         <width>400</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="contextMenuPolicy">
+                        <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::VLine</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string>PACIENTE</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>HORÁRIO</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>DESCRIÇÃO</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ID ATENDIMENTO</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_3">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_22">
+                        <item>
+                         <widget class="QPushButton" name="excluir_linha">
+                          <property name="font">
+                           <font>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>EXCLUIR LINHA</string>
+                          </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>:/icons/excluir.svg</normaloff>:/icons/excluir.svg</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>13</width>
+                            <height>13</height>
+                           </size>
+                          </property>
+                          <property name="class" stdset="0">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="titulo_ultimo_paciente_excluido_2">
+                          <property name="text">
+                           <string>Último paciente excluído:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="texto_ultimo_paciente_lancado_2">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="lancar_paciente_novamente">
+                          <property name="text">
+                           <string>LANÇAR NOVAMENTE</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="verticalSpacer_3">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                           <enum>QSizePolicy::Policy::Preferred</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="texto_copiar_lancamento">
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;COPIAR MESMOS &lt;br/&gt;LANÇAMENTOS&lt;br/&gt;PARA DIA DIFERENTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QDateEdit" name="input_data_para_lancamento_copiado">
+                          <property name="minimumDateTime">
+                           <datetime>
+                            <hour>0</hour>
+                            <minute>0</minute>
+                            <second>0</second>
+                            <year>2025</year>
+                            <month>1</month>
+                            <day>1</day>
+                           </datetime>
+                          </property>
+                          <property name="maximumDate">
+                           <date>
+                            <year>2050</year>
+                            <month>12</month>
+                            <day>31</day>
+                           </date>
+                          </property>
+                          <property name="displayFormat">
+                           <string>dd/MM/yyyy</string>
+                          </property>
+                          <property name="calendarPopup">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="botao_copiar_lancamento">
+                          <property name="font">
+                           <font>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>COPIAR</string>
+                          </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>:/icons/copiar.svg</normaloff>:/icons/copiar.svg</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>15</width>
+                            <height>15</height>
+                           </size>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_pacientes">
+             <attribute name="title">
+              <string>Pacientes</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QFrame" name="frame_gerar_resumo_mensagem">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QFrame" name="frame_gerar_resumo_mensagem_">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QFrame" name="frame_gerar_resumo_mensagem_paciente">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Shape::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Shadow::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_20">
+                       <item>
+                        <widget class="QLineEdit" name="input_resumo_nome_paciente">
+                         <property name="placeholderText">
+                          <string>NOME DO PACIENTE</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="gerar_resumo_paciente">
+                         <property name="text">
+                          <string>RESUMO</string>
+                         </property>
+                         <property name="class" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_gerar_resumo_mensagem_profissional">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Shape::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Shadow::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_19">
+                       <item>
+                        <widget class="QComboBox" name="input_profissional_resumo">
+                         <item>
+                          <property name="text">
+                           <string>FERNANDA</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>JUNIA</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QDateEdit" name="mes_e_ano_resumo_profissional">
+                         <property name="maximumDateTime">
+                          <datetime>
+                           <hour>23</hour>
+                           <minute>59</minute>
+                           <second>59</second>
+                           <year>2051</year>
+                           <month>1</month>
+                           <day>5</day>
+                          </datetime>
+                         </property>
+                         <property name="minimumDateTime">
+                          <datetime>
+                           <hour>0</hour>
+                           <minute>0</minute>
+                           <second>0</second>
+                           <year>2025</year>
+                           <month>1</month>
+                           <day>1</day>
+                          </datetime>
+                         </property>
+                         <property name="minimumDate">
+                          <date>
+                           <year>2025</year>
+                           <month>1</month>
+                           <day>1</day>
+                          </date>
+                         </property>
+                         <property name="displayFormat">
+                          <string>MM/yyyy</string>
+                         </property>
+                         <property name="calendarPopup">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="gerar_mensagem_e_resumo_profissional">
+                         <property name="text">
+                          <string>RESUMO </string>
+                         </property>
+                         <property name="class" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_gerar_mensagem_e_resumo">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_21">
+                 <item>
+                  <widget class="QTextBrowser" name="mesagem_ou_resumo_final_texto">
+                   <property name="html">
+                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:700; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tela_procurar_pacientes">
+             <attribute name="title">
+              <string>Horários</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QFrame" name="frame_pesquisar_pacientes">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <widget class="QFrame" name="frame">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>600</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>750</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QLineEdit" name="input_nome_paciente_pesquisar">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>550</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Digite o nome do paciente para buscar...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="botao_pesquisar_paciente">
+                      <property name="minimumSize">
+                       <size>
+                        <width>55</width>
+                        <height>45</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>105</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>BUSCAR</string>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>:/icons/search.svg</normaloff>:/icons/search.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>19</width>
+                        <height>19</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_4">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <item>
+                     <widget class="QTableWidget" name="tabela_horarios_pesquisa">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>650</height>
+                       </size>
+                      </property>
+                      <column>
+                       <property name="text">
+                        <string>PACIENTE</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>PROFISSIONAL</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>DATA</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>HORA</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>DESCRIÇÃO</string>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>Sobre</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;AGENDA FIT - 2.0&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Autor - &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;Kauan Augusto Naves&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Descrição:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Este programa foi feito para o controle de atendimentos em uma academia,&lt;br/&gt;organizando os agendamentos diários e gerando resumos por profissional com datas,&lt;br/&gt;horários e nomes dos pacientes.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
