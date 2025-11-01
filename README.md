@@ -1,9 +1,9 @@
-# AgendaFIT
+## AgendaFIT
 
                         Agenda FIT - Sistema de Agendamento
     Agenda FIT é um sistema de desktop desenvolvido em Python com PySide6, projetado para gerenciar agendamentos de pacientes para profissionais em uma clínica ou academia. O sistema oferece uma interface gráfica intuitiva para facilitar o controle de horários, a geração de resumos e a consulta de atendimentos.
 
-# Motivação
+## Motivação
 
     O Agenda FIT não é apenas um projeto de estudo, mas uma solução desenvolvida para atender a uma necessidade real. A gestão de agendamentos em uma academia local era realizada de forma manual utilizando agendas de papel, o que gerava desafios como:
 
@@ -16,10 +16,10 @@
 
 
 
-# Descrição
+## Descrição
     Este projeto foi criado para otimizar a organização de atendimentos diários, permitindo que os profissionais visualizem suas agendas, lancem novos horários e gerem relatórios mensais de forma rápida e eficiente. O sistema utiliza um banco de dados local SQLite3 para armazenar todas as informações de forma segura e persistente na máquina do usuário.
 
-# Funcionalidades Principais
+## Funcionalidades Principais
     O sistema conta com as seguintes funcionalidades:
 
     Agendamento de Atendimentos: Permite registrar novos atendimentos informando o nome do paciente, o profissional responsável, data, hora e uma descrição (ex: Avaliação, Pilates, Particular).
@@ -36,7 +36,7 @@
 
     Persistência de Dados: As informações são salvas localmente em um banco de dados SQLite, garantindo que os dados não sejam perdidos ao fechar o programa.
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
     - Linguagem: Python 3
 
     - Interface Gráfica (GUI): PySide6 (Qt for Python)
@@ -45,7 +45,7 @@
 
     - Manipulação de Caminhos: pathlib para gerenciamento de diretórios de forma multiplataforma.
 
-# Estrutura do Projeto
+## Estrutura do Projeto
     O código está organizado seguindo uma estrutura que separa as responsabilidades em diferentes camadas (Model-View-Controller):
 
     main.py: Ponto de entrada da aplicação, responsável por iniciar a interface e conectar os eventos aos métodos do controlador.
