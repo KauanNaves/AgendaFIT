@@ -56,3 +56,11 @@ controller/Controlador.py: Orquestra a lógica da aplicação, intermediando a c
 
 model/: Inclui as classes de dados (Paciente.py, Profissional.py, Atendimento.py) e o GerenciadorBancoDeDados.py, que encapsula toda a lógica de acesso e manipulação dos dados.
 
+## Prints
+
+![Este é o print da tela inicial do AgendaFIT](./assets/print-home.png)
+![Este é o print da tela de lançamentos do AgendaFIT](./assets/print-lancar.png)
+![Este é o print da tela de agendas do AgendaFIT](./assets/print-agendas.png)
+![Este é o print da tela de horários do AgendaFIT](./assets/print-horarios.png)
+![Este é o print da tela de resumos do AgendaFIT](./assets/print-resumos.png)
+![Este é o print das informações do AgendaFIT](./assets/print-sobre.png)
