@@ -1,6 +1,6 @@
 ## AgendaFIT
 
-    Agenda FIT - Sistema de Agendamento
+                Agenda FIT - Sistema de Agendamento
 Agenda FIT é um sistema de desktop desenvolvido em Python com PySide6, projetado para gerenciar agendamentos de pacientes para profissionais em uma clínica ou academia. O sistema oferece uma interface gráfica intuitiva para facilitar o controle de horários, a geração de resumos e a consulta de atendimentos.
 
 ## Motivação
