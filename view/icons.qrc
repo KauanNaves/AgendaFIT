@@ -1,23 +1,14 @@
 <RCC>
-  <qresource prefix="/">
+  <qresource prefix="/icons">
     <file>icons/agenda.svg</file>
-    <file>icons/buton_lancar.svg</file>
-    <file>icons/copiar.svg</file>
-    <file>icons/excluir.svg</file>
-    <file>icons/home.svg</file>
-    <file>icons/informacoes.svg</file>
-    <file>icons/lancar.svg</file>
-    <file>icons/paciente.svg</file>
-    <file>icons/search.svg</file>
-    <file>icons/agenda.svg</file>
-    <file>icons/buton_lancar.svg</file>
-    <file>icons/copiar.svg</file>
-    <file>icons/excluir.svg</file>
-    <file>icons/home.svg</file>
-    <file>icons/informacoes.svg</file>
-    <file>icons/lancar.svg</file>
-    <file>icons/paciente.svg</file>
-    <file>icons/search.svg</file>
-
+    <file alias="buton_lancar.svg">icons/buton_lancar.svg</file>
+    <file alias="config.svg">icons/config.svg</file>
+    <file alias="copiar.svg">icons/copiar.svg</file>
+    <file alias="excluir.svg">icons/excluir.svg</file>
+    <file alias="home.svg">icons/home.svg</file>
+    <file alias="informacoes.svg">icons/informacoes.svg</file>
+    <file alias="lancar.svg">icons/lancar.svg</file>
+    <file alias="paciente.svg">icons/paciente.svg</file>
+    <file alias="search.svg">icons/search.svg</file>
   </qresource>
 </RCC>

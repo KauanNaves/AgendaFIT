@@ -149,7 +149,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset>
+                 <iconset resource="icons.qrc">
                   <normaloff>:/icons/home.svg</normaloff>:/icons/home.svg</iconset>
                 </property>
                 <property name="iconSize">
@@ -166,7 +166,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset>
+                 <iconset resource="icons.qrc">
                   <normaloff>:/icons/buton_lancar.svg</normaloff>:/icons/buton_lancar.svg</iconset>
                 </property>
                 <property name="iconSize">
@@ -183,8 +183,8 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset>
-                  <normaloff>:/icons/agenda.svg</normaloff>:/icons/agenda.svg</iconset>
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/agenda.svg</normaloff>:/icons/icons/agenda.svg</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -200,7 +200,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset>
+                 <iconset resource="icons.qrc">
                   <normaloff>:/icons/paciente.svg</normaloff>:/icons/paciente.svg</iconset>
                 </property>
                 <property name="iconSize">
@@ -217,7 +217,7 @@
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset>
+                 <iconset resource="icons.qrc">
                   <normaloff>:/icons/search.svg</normaloff>:/icons/search.svg</iconset>
                 </property>
                 <property name="iconSize">
@@ -251,8 +251,8 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>126</width>
-               <height>110</height>
+               <width>132</width>
+               <height>539</height>
               </rect>
              </property>
              <attribute name="label">
@@ -269,12 +269,29 @@
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_23">
                  <item>
+                  <widget class="QPushButton" name="botao_gerenciar">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="icons.qrc">
+                     <normaloff>:/icons/config.svg</normaloff>:/icons/config.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="botao_mais_informacoes">
                    <property name="text">
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset>
+                    <iconset resource="icons.qrc">
                      <normaloff>:/icons/informacoes.svg</normaloff>:/icons/informacoes.svg</iconset>
                    </property>
                    <property name="iconSize">
@@ -434,22 +451,22 @@
                    </property>
                    <property name="dateTime">
                     <datetime>
-                     <hour>15</hour>
+                     <hour>0</hour>
                      <minute>0</minute>
                      <second>0</second>
                      <year>2025</year>
                      <month>1</month>
-                     <day>1</day>
+                     <day>2</day>
                     </datetime>
                    </property>
                    <property name="minimumDateTime">
                     <datetime>
-                     <hour>15</hour>
+                     <hour>0</hour>
                      <minute>0</minute>
                      <second>0</second>
                      <year>2025</year>
                      <month>1</month>
-                     <day>1</day>
+                     <day>2</day>
                     </datetime>
                    </property>
                    <property name="maximumDate">
@@ -541,7 +558,7 @@
                        <string/>
                       </property>
                       <property name="icon">
-                       <iconset>
+                       <iconset resource="icons.qrc">
                         <normaloff>:/icons/buton_lancar.svg</normaloff>:/icons/buton_lancar.svg</iconset>
                       </property>
                       <property name="iconSize">
@@ -700,7 +717,7 @@
                            <string>EXCLUIR LINHA</string>
                           </property>
                           <property name="icon">
-                           <iconset>
+                           <iconset resource="icons.qrc">
                             <normaloff>:/icons/excluir.svg</normaloff>:/icons/excluir.svg</iconset>
                           </property>
                           <property name="iconSize">
@@ -802,7 +819,7 @@
                            <string>COPIAR</string>
                           </property>
                           <property name="icon">
-                           <iconset>
+                           <iconset resource="icons.qrc">
                             <normaloff>:/icons/copiar.svg</normaloff>:/icons/copiar.svg</iconset>
                           </property>
                           <property name="iconSize">
@@ -933,7 +950,7 @@
                            <second>59</second>
                            <year>2051</year>
                            <month>1</month>
-                           <day>5</day>
+                           <day>8</day>
                           </datetime>
                          </property>
                          <property name="minimumDateTime">
@@ -1092,7 +1109,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <string>BUSCAR</string>
                       </property>
                       <property name="icon">
-                       <iconset>
+                       <iconset resource="icons.qrc">
                         <normaloff>:/icons/search.svg</normaloff>:/icons/search.svg</iconset>
                       </property>
                       <property name="iconSize">
@@ -1152,6 +1169,241 @@ li.checked::marker { content: &quot;\2612&quot;; }
                     </item>
                    </layout>
                   </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Configurações</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <widget class="QFrame" name="frame_container_configuraes">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="0" column="0">
+                    <widget class="QFrame" name="frame_config_profissional">
+                     <property name="frameShape">
+                      <enum>QFrame::Shape::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Shadow::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <item>
+                       <layout class="QGridLayout" name="gridLayout_2">
+                        <item row="4" column="1" colspan="2">
+                         <widget class="QPushButton" name="button_excluir_profissionais_config">
+                          <property name="text">
+                           <string>EXCLUIR</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QPushButton" name="button_adicionar_profissionais_config">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>ADICIONAR</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <spacer name="horizontalSpacer">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="3" column="0" colspan="3">
+                         <widget class="QTableWidget" name="table_profissionais_config">
+                          <column>
+                           <property name="text">
+                            <string>PROFISSIONAL</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item row="2" column="0" colspan="3">
+                         <widget class="QLabel" name="subtitle_config1">
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PROFISSIONAIS ADICIONADOS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0" colspan="2">
+                         <widget class="QLineEdit" name="input_profissional_config">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Nome do profissional...</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0" colspan="3">
+                         <widget class="QLabel" name="title_profissionais_config">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>14</pointsize>
+                            <italic>false</italic>
+                            <bold>true</bold>
+                            <underline>false</underline>
+                            <strikeout>false</strikeout>
+                           </font>
+                          </property>
+                          <property name="layoutDirection">
+                           <enum>Qt::LayoutDirection::LeftToRight</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PROFISSIONAIS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QFrame" name="frame_config_infos">
+                     <property name="frameShape">
+                      <enum>QFrame::Shape::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Shadow::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_10">
+                      <item>
+                       <layout class="QGridLayout" name="gridLayout_3">
+                        <item row="1" column="2">
+                         <widget class="QPushButton" name="button_adicionar_tipo">
+                          <property name="minimumSize">
+                           <size>
+                            <width>35</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>ADICIONAR</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1" colspan="2">
+                         <widget class="QPushButton" name="button_excluir_tipo_config">
+                          <property name="text">
+                           <string>EXCLUIR</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <spacer name="horizontalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Orientation::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="3" column="0" colspan="3">
+                         <widget class="QTableWidget" name="table_tipos_config">
+                          <column>
+                           <property name="text">
+                            <string>TIPOS</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item row="2" column="0" colspan="3">
+                         <widget class="QLabel" name="subtitle_tipo_config">
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TIPOS DE ATENDIMENTOS ADICIONADOS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0" colspan="2">
+                         <widget class="QLineEdit" name="input_tipo_config">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Tipo de atendimento...</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0" colspan="3">
+                         <widget class="QLabel" name="title_atendimentos_config">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>35</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>14</pointsize>
+                            <italic>false</italic>
+                            <bold>true</bold>
+                            <underline>false</underline>
+                            <strikeout>false</strikeout>
+                           </font>
+                          </property>
+                          <property name="layoutDirection">
+                           <enum>Qt::LayoutDirection::LeftToRight</enum>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TIPOS DE ATENDIMENTOS&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
                  </item>
                 </layout>
                </widget>

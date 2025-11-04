@@ -16,11 +16,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCalendarWidget, QComboBox, QDateEdit,
-    QFrame, QHBoxLayout, QHeaderView, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QTabWidget, QTableWidget, QTableWidgetItem,
-    QTextBrowser, QTimeEdit, QToolBox, QVBoxLayout,
-    QWidget)
+    QFrame, QGridLayout, QHBoxLayout, QHeaderView,
+    QLabel, QLineEdit, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QTabWidget, QTableWidget,
+    QTableWidgetItem, QTextBrowser, QTimeEdit, QToolBox,
+    QVBoxLayout, QWidget)
 import view.recursos_rc as recursos_rc
 
 class Ui_MainWindow(object):
@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
         self.botao_agendas = QPushButton(self.pagina1_menu)
         self.botao_agendas.setObjectName(u"botao_agendas")
         icon2 = QIcon()
-        icon2.addFile(u":/icons/agenda.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon2.addFile(u":/icons/icons/agenda.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.botao_agendas.setIcon(icon2)
         self.botao_agendas.setIconSize(QSize(30, 30))
 
@@ -129,7 +129,7 @@ class Ui_MainWindow(object):
         self.paginas_menu_principal.addItem(self.pagina1_menu, u"MENU")
         self.pagina_informacoes_menu = QWidget()
         self.pagina_informacoes_menu.setObjectName(u"pagina_informacoes_menu")
-        self.pagina_informacoes_menu.setGeometry(QRect(0, 0, 126, 110))
+        self.pagina_informacoes_menu.setGeometry(QRect(0, 0, 132, 539))
         self.verticalLayout_5 = QVBoxLayout(self.pagina_informacoes_menu)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.frame_informacoes_menu = QFrame(self.pagina_informacoes_menu)
@@ -138,11 +138,20 @@ class Ui_MainWindow(object):
         self.frame_informacoes_menu.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_23 = QVBoxLayout(self.frame_informacoes_menu)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.botao_gerenciar = QPushButton(self.frame_informacoes_menu)
+        self.botao_gerenciar.setObjectName(u"botao_gerenciar")
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/config.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.botao_gerenciar.setIcon(icon5)
+        self.botao_gerenciar.setIconSize(QSize(30, 30))
+
+        self.verticalLayout_23.addWidget(self.botao_gerenciar)
+
         self.botao_mais_informacoes = QPushButton(self.frame_informacoes_menu)
         self.botao_mais_informacoes.setObjectName(u"botao_mais_informacoes")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/informacoes.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.botao_mais_informacoes.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/informacoes.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.botao_mais_informacoes.setIcon(icon6)
         self.botao_mais_informacoes.setIconSize(QSize(30, 30))
 
         self.verticalLayout_23.addWidget(self.botao_mais_informacoes)
@@ -237,8 +246,8 @@ class Ui_MainWindow(object):
         sizePolicy1.setHeightForWidth(self.input_data.sizePolicy().hasHeightForWidth())
         self.input_data.setSizePolicy(sizePolicy1)
         self.input_data.setMaximumSize(QSize(150, 16777215))
-        self.input_data.setDateTime(QDateTime(QDate(2025, 1, 1), QTime(15, 0, 0)))
-        self.input_data.setMinimumDateTime(QDateTime(QDate(2025, 1, 1), QTime(15, 0, 0)))
+        self.input_data.setDateTime(QDateTime(QDate(2025, 1, 2), QTime(0, 0, 0)))
+        self.input_data.setMinimumDateTime(QDateTime(QDate(2025, 1, 2), QTime(0, 0, 0)))
         self.input_data.setMaximumDate(QDate(2030, 12, 31))
         self.input_data.setCalendarPopup(True)
 
@@ -362,9 +371,9 @@ class Ui_MainWindow(object):
         self.excluir_linha = QPushButton(self.frame_3)
         self.excluir_linha.setObjectName(u"excluir_linha")
         self.excluir_linha.setFont(font1)
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/excluir.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.excluir_linha.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/excluir.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.excluir_linha.setIcon(icon7)
         self.excluir_linha.setIconSize(QSize(13, 13))
 
         self.verticalLayout_22.addWidget(self.excluir_linha)
@@ -406,9 +415,9 @@ class Ui_MainWindow(object):
         self.botao_copiar_lancamento = QPushButton(self.frame_3)
         self.botao_copiar_lancamento.setObjectName(u"botao_copiar_lancamento")
         self.botao_copiar_lancamento.setFont(font1)
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/copiar.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.botao_copiar_lancamento.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/copiar.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.botao_copiar_lancamento.setIcon(icon8)
         self.botao_copiar_lancamento.setIconSize(QSize(15, 15))
 
         self.verticalLayout_22.addWidget(self.botao_copiar_lancamento)
@@ -483,7 +492,7 @@ class Ui_MainWindow(object):
 
         self.mes_e_ano_resumo_profissional = QDateEdit(self.frame_gerar_resumo_mensagem_profissional)
         self.mes_e_ano_resumo_profissional.setObjectName(u"mes_e_ano_resumo_profissional")
-        self.mes_e_ano_resumo_profissional.setMaximumDateTime(QDateTime(QDate(2051, 1, 5), QTime(23, 59, 59)))
+        self.mes_e_ano_resumo_profissional.setMaximumDateTime(QDateTime(QDate(2051, 1, 8), QTime(23, 59, 59)))
         self.mes_e_ano_resumo_profissional.setMinimumDateTime(QDateTime(QDate(2025, 1, 1), QTime(0, 0, 0)))
         self.mes_e_ano_resumo_profissional.setMinimumDate(QDate(2025, 1, 1))
         self.mes_e_ano_resumo_profissional.setCalendarPopup(True)
@@ -597,6 +606,146 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.frame_pesquisar_pacientes)
 
         self.paginas_principais.addTab(self.tela_procurar_pacientes, "")
+        self.tab_2 = QWidget()
+        self.tab_2.setObjectName(u"tab_2")
+        self.verticalLayout_13 = QVBoxLayout(self.tab_2)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.frame_container_configuraes = QFrame(self.tab_2)
+        self.frame_container_configuraes.setObjectName(u"frame_container_configuraes")
+        self.frame_container_configuraes.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_container_configuraes.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_8 = QHBoxLayout(self.frame_container_configuraes)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.frame_config_profissional = QFrame(self.frame_container_configuraes)
+        self.frame_config_profissional.setObjectName(u"frame_config_profissional")
+        self.frame_config_profissional.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_config_profissional.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_9 = QHBoxLayout(self.frame_config_profissional)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.gridLayout_2 = QGridLayout()
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.button_excluir_profissionais_config = QPushButton(self.frame_config_profissional)
+        self.button_excluir_profissionais_config.setObjectName(u"button_excluir_profissionais_config")
+
+        self.gridLayout_2.addWidget(self.button_excluir_profissionais_config, 4, 1, 1, 2)
+
+        self.button_adicionar_profissionais_config = QPushButton(self.frame_config_profissional)
+        self.button_adicionar_profissionais_config.setObjectName(u"button_adicionar_profissionais_config")
+        self.button_adicionar_profissionais_config.setMinimumSize(QSize(0, 35))
+
+        self.gridLayout_2.addWidget(self.button_adicionar_profissionais_config, 1, 2, 1, 1)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_2.addItem(self.horizontalSpacer, 4, 0, 1, 1)
+
+        self.table_profissionais_config = QTableWidget(self.frame_config_profissional)
+        if (self.table_profissionais_config.columnCount() < 1):
+            self.table_profissionais_config.setColumnCount(1)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.table_profissionais_config.setHorizontalHeaderItem(0, __qtablewidgetitem9)
+        self.table_profissionais_config.setObjectName(u"table_profissionais_config")
+
+        self.gridLayout_2.addWidget(self.table_profissionais_config, 3, 0, 1, 3)
+
+        self.subtitle_config1 = QLabel(self.frame_config_profissional)
+        self.subtitle_config1.setObjectName(u"subtitle_config1")
+
+        self.gridLayout_2.addWidget(self.subtitle_config1, 2, 0, 1, 3)
+
+        self.input_profissional_config = QLineEdit(self.frame_config_profissional)
+        self.input_profissional_config.setObjectName(u"input_profissional_config")
+        self.input_profissional_config.setMinimumSize(QSize(0, 35))
+
+        self.gridLayout_2.addWidget(self.input_profissional_config, 1, 0, 1, 2)
+
+        self.title_profissionais_config = QLabel(self.frame_config_profissional)
+        self.title_profissionais_config.setObjectName(u"title_profissionais_config")
+        self.title_profissionais_config.setMinimumSize(QSize(0, 35))
+        font2 = QFont()
+        font2.setPointSize(14)
+        font2.setBold(True)
+        font2.setItalic(False)
+        font2.setUnderline(False)
+        font2.setStrikeOut(False)
+        self.title_profissionais_config.setFont(font2)
+        self.title_profissionais_config.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.title_profissionais_config.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.title_profissionais_config, 0, 0, 1, 3)
+
+
+        self.horizontalLayout_9.addLayout(self.gridLayout_2)
+
+
+        self.gridLayout.addWidget(self.frame_config_profissional, 0, 0, 1, 1)
+
+        self.frame_config_infos = QFrame(self.frame_container_configuraes)
+        self.frame_config_infos.setObjectName(u"frame_config_infos")
+        self.frame_config_infos.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_config_infos.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_config_infos)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.gridLayout_3 = QGridLayout()
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.button_adicionar_tipo = QPushButton(self.frame_config_infos)
+        self.button_adicionar_tipo.setObjectName(u"button_adicionar_tipo")
+        self.button_adicionar_tipo.setMinimumSize(QSize(35, 35))
+
+        self.gridLayout_3.addWidget(self.button_adicionar_tipo, 1, 2, 1, 1)
+
+        self.button_excluir_tipo_config = QPushButton(self.frame_config_infos)
+        self.button_excluir_tipo_config.setObjectName(u"button_excluir_tipo_config")
+
+        self.gridLayout_3.addWidget(self.button_excluir_tipo_config, 4, 1, 1, 2)
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 4, 0, 1, 1)
+
+        self.table_tipos_config = QTableWidget(self.frame_config_infos)
+        if (self.table_tipos_config.columnCount() < 1):
+            self.table_tipos_config.setColumnCount(1)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.table_tipos_config.setHorizontalHeaderItem(0, __qtablewidgetitem10)
+        self.table_tipos_config.setObjectName(u"table_tipos_config")
+
+        self.gridLayout_3.addWidget(self.table_tipos_config, 3, 0, 1, 3)
+
+        self.subtitle_tipo_config = QLabel(self.frame_config_infos)
+        self.subtitle_tipo_config.setObjectName(u"subtitle_tipo_config")
+
+        self.gridLayout_3.addWidget(self.subtitle_tipo_config, 2, 0, 1, 3)
+
+        self.input_tipo_config = QLineEdit(self.frame_config_infos)
+        self.input_tipo_config.setObjectName(u"input_tipo_config")
+        self.input_tipo_config.setMinimumSize(QSize(0, 35))
+
+        self.gridLayout_3.addWidget(self.input_tipo_config, 1, 0, 1, 2)
+
+        self.title_atendimentos_config = QLabel(self.frame_config_infos)
+        self.title_atendimentos_config.setObjectName(u"title_atendimentos_config")
+        self.title_atendimentos_config.setMinimumSize(QSize(0, 35))
+        self.title_atendimentos_config.setFont(font2)
+        self.title_atendimentos_config.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+
+        self.gridLayout_3.addWidget(self.title_atendimentos_config, 0, 0, 1, 3)
+
+
+        self.horizontalLayout_10.addLayout(self.gridLayout_3)
+
+
+        self.gridLayout.addWidget(self.frame_config_infos, 0, 1, 1, 1)
+
+
+        self.horizontalLayout_8.addLayout(self.gridLayout)
+
+
+        self.verticalLayout_13.addWidget(self.frame_container_configuraes)
+
+        self.paginas_principais.addTab(self.tab_2, "")
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
         self.verticalLayout_24 = QVBoxLayout(self.tab)
@@ -638,6 +787,7 @@ class Ui_MainWindow(object):
         self.botao_pacientes.setText("")
         self.botao_pesquisar_pacientes_menu.setText("")
         self.paginas_menu_principal.setItemText(self.paginas_menu_principal.indexOf(self.pagina1_menu), QCoreApplication.translate("MainWindow", u"MENU", None))
+        self.botao_gerenciar.setText("")
         self.botao_mais_informacoes.setText("")
         self.texto_versao_.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">AGENDA FIT<br/>v2.0.0</p></body></html>", None))
         self.paginas_menu_principal.setItemText(self.paginas_menu_principal.indexOf(self.pagina_informacoes_menu), QCoreApplication.translate("MainWindow", u"INFORMA\u00c7\u00d5ES", None))
@@ -708,6 +858,22 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem8 = self.tabela_horarios_pesquisa.horizontalHeaderItem(4)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"DESCRI\u00c7\u00c3O", None));
         self.paginas_principais.setTabText(self.paginas_principais.indexOf(self.tela_procurar_pacientes), QCoreApplication.translate("MainWindow", u"Hor\u00e1rios", None))
+        self.button_excluir_profissionais_config.setText(QCoreApplication.translate("MainWindow", u"EXCLUIR", None))
+        self.button_adicionar_profissionais_config.setText(QCoreApplication.translate("MainWindow", u"ADICIONAR", None))
+        ___qtablewidgetitem9 = self.table_profissionais_config.horizontalHeaderItem(0)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"PROFISSIONAL", None));
+        self.subtitle_config1.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">PROFISSIONAIS ADICIONADOS</p></body></html>", None))
+        self.input_profissional_config.setText("")
+        self.input_profissional_config.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nome do profissional...", None))
+        self.title_profissionais_config.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">PROFISSIONAIS</p></body></html>", None))
+        self.button_adicionar_tipo.setText(QCoreApplication.translate("MainWindow", u"ADICIONAR", None))
+        self.button_excluir_tipo_config.setText(QCoreApplication.translate("MainWindow", u"EXCLUIR", None))
+        ___qtablewidgetitem10 = self.table_tipos_config.horizontalHeaderItem(0)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"TIPOS", None));
+        self.subtitle_tipo_config.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">TIPOS DE ATENDIMENTOS ADICIONADOS</p></body></html>", None))
+        self.input_tipo_config.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Tipo de atendimento...", None))
+        self.title_atendimentos_config.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">TIPOS DE ATENDIMENTOS</p></body></html>", None))
+        self.paginas_principais.setTabText(self.paginas_principais.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00f5es", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">AGENDA FIT - 2.0</span></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:12pt;\">Autor - </span><span style=\" font-size:12pt; font-style:italic;\">Kauan Augusto Naves</span></p><p align=\"center\"><br/></p><p align=\"center\"><br/></p><p align=\"center\"><br/></p><p align=\"center\"><span style=\" font-size:14pt;\">Descri\u00e7\u00e3o:</span></p><p align=\"center\"><span style=\" font-size:12pt;\">Este programa foi feito para o controle de atendimentos em uma academia,<br/>organizando os agendamentos di\u00e1rios e gerando resumos por profissional com datas,<br/>hor\u00e1rios e nomes dos pacientes.</span></p></body></html>", None))
         self.paginas_principais.setTabText(self.paginas_principais.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Sobre", None))
     # retranslateUi
